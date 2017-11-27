@@ -1,6 +1,6 @@
-Dynamic default ratings
-===============
-An academic exercise looking at the reviews and ratings from the Yelp Dataset.
+Yelp review outlook
+===========================
+An academic exercise predicting Yelp ratings based on reviews.
 
 Author: Christopher Khoo
 
@@ -28,9 +28,7 @@ With the event of social media and online directories - such as Yelp, TripAdviso
 
 In particular, reviews and ratings of a restaurant could make or break a new establishment. It is now a common practice for customers to checkout a restaurant (or establishment) using online reviews and ratings before giving it a try.
 
-This project proposes predicting the rating based on the review written.
-
-
+This project will predict Yelp's 5-star rating based on the review written.
 
 ## 2. Goal (Why)
 The prediction could be used as part of a new feature to change the default rating from a static value (e.g. default of 3 stars or 0 stars) into a dynamic default value based on the review. This default rating would still need to be accepted by the reviewer.
@@ -43,23 +41,29 @@ An easier review experience with more reflective ratings, would add value to all
 - more reflective ratings  reduce frustration / confusion of establishment proprietors arising from an unconsidered rating
 - the platform's (e.g. Yelp) quality of reviews is improved - providing better, cleaner data
 
-## 3. Data & Sources
+## 3. Data & Sources (From Where & When)
 The dataset was obtained as part the '[Yelp dataSet Challenge - Round 10](https://www.yelp.com.sg/dataset)' (September 1, 2017 to December 31, 2017)
 
 In particular, the `review.json` file from the JSON dataset.
 
 Note that in line with the terms and conditions, the raw dataset will not be posted in this repo.
 
-## 4. Approach
+## 4. Approach (How)
 This exercise explore a range of NLP techniques.
 
-#### Bag of words
+#### Feature Engineering
 Pre-processing the data:
 - Case conversion
 - Punctuation removal
 - (REGEX expressions) ?
 - Removal of stop words
+- Expand contractions
 - Stemming / Lemmatization
+
+Feature Engineering
+- Bag of words
+- term frequencies
+- inverse document frequencies
 
 Training predictive models
 - Logistic regression
@@ -69,16 +73,21 @@ Training predictive models
 Validation techniques
 - K-folds Validation
 
-Additional processing
-- Sub-topic extraction:
-https://www.yelp.com.sg/html/pdf/YelpDatasetChallengeWinner_ImprovingRestaurants.pdf
-- Clustering by: Hierarchical clustering, K-means clustering
+Model performance evaluations
+- standard classification metrics (F1 - score, precision, recall, accuracy)
 
 Visualisation techniques
 - Clustered word clouds: https://www.yelp.com.sg/html/pdf/YelpDatasetChallengeWinner_WordCloud.pdf
 - Trees?
 
-## 5. Tech & packages
+Stretch goals
+- Sub-topic extraction:
+https://www.yelp.com.sg/html/pdf/YelpDatasetChallengeWinner_ImprovingRestaurants.pdf
+- Clustering by: Hierarchical clustering, K-means clustering
+- Sentiment analysis
+- Additional context (type of establishment, type of user)
+
+## 5. Tech & packages (How)
 Language: Python
 Packages: TBD
 
