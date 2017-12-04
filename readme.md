@@ -8,13 +8,15 @@ Project: Springboard Capstone Project 1
 
 ## Contents of Read Me
 1. Project Proposal
+2. Project architecture
+3. Data wrangling
 
 Atom preview: `ctrl + shift + m`
 
 --------------
 # Project Proposal
 
-## Contents of proposal
+## 1. Contents of proposal
 1. Context
 2. Goal
 3. Data & Sources
@@ -47,6 +49,8 @@ The dataset was obtained as part the '[Yelp dataSet Challenge - Round 10](https:
 In particular, the `review.json` file from the JSON dataset.
 
 Note that in line with the terms and conditions, the raw dataset will not be posted in this repo.
+
+For the purpose of this exercise, the data set will focus on restaurant reviews (~62% of reviews in the Yelp data set).
 
 ## 4. Approach (How)
 This exercise explore a range of NLP techniques.
@@ -102,3 +106,34 @@ Packages: TBD
 - Begin documentation of the findings using a blog
 
 ------
+
+# 2. Project architecture
+
+## Folders & files
+  1. root
+    1. Read me - this file that describes the project
+    2. data_wrangling python notebook - steps used to input and clean raw data
+  2. raw_data
+    1. initial data from YELP
+
+## Libraries and dependencies
+- `json` : for reading in the raw dataset
+- `pandas` : for manipulating data frames
+- `matplotlib` : for data visualization
+
+------
+
+# 3. Data wrangling
+
+## Steps
+  1. Set up jupyter notebook - `data_wrangling.ipynb`
+  2. Load in data for reviews and businesses
+  3. Exploratory analysis
+  4. Reformat column for date into data-time category
+  5. Drop business columns associated with business location
+  6. Extract businesses that are restaurants
+  7. Merge the two dataframes
+  8. Save cleaned data to a csv
+  9. Note that there were no missing values and no apparent outliers (more analysis required) - there appears to be a bias towards high ratings 
+
+--------
