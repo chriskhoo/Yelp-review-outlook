@@ -55,7 +55,6 @@ For the purpose of this exercise, the data set will focus on restaurant reviews 
 ## 4. Approach (How)
 This exercise explore a range of NLP techniques.
 
-#### Feature Engineering
 Pre-processing the data:
 - Case conversion
 - Punctuation removal
@@ -130,10 +129,17 @@ Packages: TBD
   2. Load in data for reviews and businesses
   3. Exploratory analysis
   4. Reformat column for date into data-time category
-  5. Drop business columns associated with business location
-  6. Extract businesses that are restaurants
-  7. Merge the two dataframes
-  8. Save cleaned data to a csv
-  9. Note that there were no missing values and no apparent outliers (more analysis required) - there appears to be a bias towards high ratings 
-
+  5. Extract businesses that are restaurants
+  6. Extract restaurants that are in the USA using a bounding box
+  7. Drop business columns associated with business location
+  8. Merge the two dataframes
+  9. Save cleaned data to a csv
+  10. Check for missing values and apparent outliers (none detected)
+  11. Pre-processing the data:
+    - Case conversion
+    - Punctuation removal
+    - Removal of stop words
+    - Expand contractions?
+    - Stemming / Lemmatization
+  12. Vectorise text 
 --------
