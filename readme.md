@@ -112,8 +112,10 @@ Packages: TBD
   1. root
     1. Read me - this file that describes the project
     2. data_wrangling python notebook - steps used to input and clean raw data
-  2. raw_data
+  2. 01_raw_data
     1. initial data from YELP
+  3. 02_processed_data
+    1. CSV output from data wrangling
 
 ## Libraries and dependencies
 - `json` : for reading in the raw dataset
@@ -133,13 +135,12 @@ Packages: TBD
   6. Extract restaurants that are in the USA using a bounding box
   7. Drop business columns associated with business location
   8. Merge the two dataframes
-  9. Save cleaned data to a csv
-  10. Check for missing values and apparent outliers (none detected)
-  11. Pre-processing the data:
-    - Case conversion
-    - Punctuation removal
-    - Removal of stop words
-    - Expand contractions?
-    - Stemming / Lemmatization
-  12. Vectorise text 
+  9. Explore merged dataframe
+ 10. Pre-processing the data
+     - Case conversion
+     - Punctuation removal
+     - Removal of stop words
+     - Expand contractions?
+     - Stemming / Lemmatization
+ 11. Saving the output
 --------
