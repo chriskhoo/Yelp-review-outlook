@@ -50,7 +50,7 @@ In particular, the `review.json` file from the JSON dataset.
 
 Note that in line with the terms and conditions, the raw dataset will not be posted in this repo.
 
-For the purpose of this exercise, the data set will focus on restaurant reviews (~62% of reviews in the Yelp data set).
+For the purpose of this exercise, the data set will focus on US restaurant reviews (~61% of reviews in the Yelp data set).
 
 ## 4. Approach (How)
 This exercise explore a range of NLP techniques.
